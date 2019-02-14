@@ -38,7 +38,8 @@ Notice about this example:
 """
 
 import string
-all_letters = string.ascii_lowercase
+all_letters = list(string.ascii_lowercase)
+letter_freq = all_letters
 
 # Take user input
 original = input("Please enter a string of text (the bigger the better): ")
@@ -47,7 +48,11 @@ original = input("Please enter a string of text (the bigger the better): ")
 original = original.lower()
 
 # Convert lower case user input to list
-original = list(original)
+original_letters = list(original)
 
-print(original)
+for x in original_letters:
+    for y in all_letters:
+        if x == y:
+            print(x)
+            print(y)
 
