@@ -41,7 +41,7 @@ import string
 all_letters = string.ascii_lowercase
 
 # Take user input
-original = list(input("Please enter a string of text (the bigger the better): ").lower())
+original = input("Please enter a string of text (the bigger the better): ")
 
 # Convert user input to lower case
 original = original.lower()
