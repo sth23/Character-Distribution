@@ -39,7 +39,7 @@ Notice about this example:
 
 import string
 all_letters = list(string.ascii_lowercase)
-letter_freq = all_letters
+letters_freq = all_letters
 
 # Take user input
 original = input("Please enter a string of text (the bigger the better): ")
