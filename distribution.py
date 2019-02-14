@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Sean Healey
+Credit: Tutorials, Stack Overflow
 
 Assignment:
 
@@ -37,8 +37,17 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 
-# Take user input and convert to lowercase
-original = input("Please enter a string of text (the bigger the better): ").lower()
+import string
+all_letters = string.ascii_lowercase
 
-letters_list = list(original)
-print(letters_list)
+# Take user input
+original = list(input("Please enter a string of text (the bigger the better): ").lower())
+
+# Convert user input to lower case
+original = original.lower()
+
+# Convert lower case user input to list
+original = list(original)
+
+print(original)
+
