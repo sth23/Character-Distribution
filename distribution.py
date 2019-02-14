@@ -36,3 +36,9 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+
+# Take user input and convert to lowercase
+original = input("Please enter a string of text (the bigger the better): ").lower()
+
+letters_list = list(original)
+print(letters_list)
