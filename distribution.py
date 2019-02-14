@@ -52,7 +52,8 @@ original_letters = list(original)
 
 for x in original_letters:
     for y in all_letters:
-        if x == y:
-            print(x)
-            print(y)
+        for z in letters_freq:
+            if x == y:
+                z = z + z
+                print(z)
 
