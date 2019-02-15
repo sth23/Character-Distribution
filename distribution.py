@@ -48,11 +48,15 @@ user_input = input("Please enter a string of text (the bigger the better): ")
 original = list(user_input.lower())
 
 # Counts instances of each letter in original
+letter_freq = []
 for x in all_letters:
     letter_count = original.count(x)
     temp_str = ""
     while letter_count != 0:
         temp_str = temp_str + x
         letter_count += -1
-    print(temp_str)
+    if len(temp_str) != 0
+        letter_freq.append(temp_str)
+
+print(letter_freq)
 
