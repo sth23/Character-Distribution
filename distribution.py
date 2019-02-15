@@ -37,23 +37,20 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 
+# Create list of all lower case letters
 import string
 all_letters = list(string.ascii_lowercase)
-letters_freq = all_letters
+letter_freq = all_letters
 
 # Take user input
-original = input("Please enter a string of text (the bigger the better): ")
+user_input = input("Please enter a string of text (the bigger the better): ")
 
-# Convert user input to lower case
-original = original.lower()
+# Convert user input to list of lower case letters
+original = list(user_input.lower())
 
-# Convert lower case user input to list
-original_letters = list(original)
+for i in range(0,len(original)):
+    for j in range(0,len(all_letters)):
+        if original[i] == all_letters[j]:
+            letter_freq[j] += original[i]
 
-for x in original_letters:
-    for y in all_letters:
-        for z in letters_freq:
-            if x == y:
-                z = z + z
-                print(z)
-
+print(letter_freq)
