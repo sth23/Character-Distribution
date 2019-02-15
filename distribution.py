@@ -40,7 +40,6 @@ Notice about this example:
 # Create list of all lower case letters
 import string
 all_letters = list(string.ascii_lowercase)
-letter_freq = all_letters
 
 # Take user input
 user_input = input("Please enter a string of text (the bigger the better): ")
@@ -51,7 +50,9 @@ original = list(user_input.lower())
 # Counts instances of each letter in original
 for x in all_letters:
     letter_count = original.count(x)
+    temp_str = ""
     while letter_count != 0:
-        print(x)
+        temp_str = temp_str + x
         letter_count += -1
+    print(temp_str)
 
