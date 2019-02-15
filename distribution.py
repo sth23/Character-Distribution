@@ -45,15 +45,13 @@ letter_freq = all_letters
 # Take user input
 user_input = input("Please enter a string of text (the bigger the better): ")
 
-# Remove punctuation
-user_input = user_input.translate(None, string.punctuation)
-
-print(user_input)
+# Remove punctuation from user input
+user_input = user_input.translate('', string.punctuation)
 
 # Convert user input to list of lower case letters
 #original = ''.join(user_input.lower().split())
 
 #print(original)
 
-#for x in original:
-    #letter_freq[all_letters.index(x)] += x
+for x in original:
+    letter_freq[all_letters.index(x)] += x
