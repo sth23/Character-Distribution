@@ -50,8 +50,8 @@ original = ''.join(user_input.lower().split())
 
 # Remove punctuation from user input
 punctuation = (list(string.punctuation))
-print(punctuation)
 original = [original.replace(x,'') for x in punctuation]
+print(original)
 
 #for x in original:
     #letter_freq[all_letters.index(x)] += x
