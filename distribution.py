@@ -50,9 +50,9 @@ original = list(user_input.lower())
 
 # Counts instances of each letter in original
 for x in all_letters:
-    letter_count = int(original.count(x))
+    letter_count = original.count(x)
     while letter_count != 0:
         print(x.format(end = "")
-        letter_count += -1
+        letter_count = letter_count - 1
     print("")
 
