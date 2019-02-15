@@ -48,7 +48,7 @@ user_input = input("Please enter a string of text (the bigger the better): ")
 original = list(user_input.lower())
 
 # Counts instances of each letter in original and creates letter_freq list appropriately
-letter_freq1 = []
+letter_freq = []
 for x in all_letters:
     letter_count = original.count(x)
     temp_str = ""
@@ -56,13 +56,17 @@ for x in all_letters:
         temp_str = temp_str + x
         letter_count += -1
     if len(temp_str) != 0:
-        letter_freq1.append(temp_str)
+        letter_freq.append(temp_str)
 
 # Sorts letter_freq list appropriately
 # List is already in alphabetical order, only need to move longer strings forward
 #letter_freq2 = []
 
-[print(len(x)) for x in letter_freq1]
+letter_freq.sort(key=len(c))
+
+print(letter_freq)
+
+#[print(len(x)) for x in letter_freq1]
 
 #for x in letter_freq1:
  #   for y in letter_freq1:
