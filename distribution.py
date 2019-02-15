@@ -50,7 +50,7 @@ original = list(user_input.lower())
 
 for x in all_letters:
     letter_count = original.count(x)
-    print(x + ": " + letter_count)
+    print(x + ": " + str(letter_count))
 print(original)
 
 
