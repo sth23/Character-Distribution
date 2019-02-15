@@ -60,20 +60,8 @@ for x in all_letters:
 
 # Sorts letter_freq list appropriately
 # List is already in alphabetical order, only need to move longer strings forward
-#letter_freq2 = []
 
-letter_freq.sort(key=len(c))
-
+def length(e):
+    return len(e)
+letter_freq.sort(key=length)
 print(letter_freq)
-
-#[print(len(x)) for x in letter_freq1]
-
-#for x in letter_freq1:
- #   for y in letter_freq1:
-  #      if len(y) > len(x):
-   #         print(x)
-            #letter_freq2.append(x)
-
-#print(letter_freq2)
-#print(letter_freq1)
-            
