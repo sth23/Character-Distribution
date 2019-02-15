@@ -49,9 +49,12 @@ user_input = input("Please enter a string of text (the bigger the better): ")
 original = ''.join(user_input.lower().split())
 
 # Remove punctuation from user input
-original = [original.replace(x,'') for x in list(string.punctuation)]
+print(list(string.punctuation))
 
-print(original)
+
+#original = [original.replace(x,'') for x in list(string.punctuation)]
+
+#print(original)
 
 #for x in original:
  #   letter_freq[all_letters.index(x)] += x
