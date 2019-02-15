@@ -49,7 +49,7 @@ user_input = input("Please enter a string of text (the bigger the better): ")
 original = ''.join(user_input.lower().split())
 
 # Remove punctuation from user input
-original = [original.replace(x) for x in list(string.punctuation)]
+original = [original.replace(x,'') for x in list(string.punctuation)]
 
 print(original)
 
