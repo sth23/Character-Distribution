@@ -48,9 +48,7 @@ user_input = input("Please enter a string of text (the bigger the better): ")
 # Convert user input to list of lower case letters
 original = list(user_input.lower())
 
-for i in range(0,len(original)):
-    for j in range(0,len(all_letters)):
-        if original[i] == all_letters[j]:
-            letter_freq[j] += original[i]
+for x in original:
+    letter_freq[all_letters.index(x)] += x
 
 print(letter_freq)
