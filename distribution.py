@@ -63,5 +63,5 @@ for x in all_letters:
 
 def length(e):
     return len(e)
-letter_freq.sort(key=length)
+letter_freq.sort(reverse = True, key = length)
 print(letter_freq)
