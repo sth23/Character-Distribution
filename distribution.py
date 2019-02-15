@@ -52,7 +52,6 @@ original = list(user_input.lower())
 for x in all_letters:
     letter_count = original.count(x)
     while letter_count != 0:
-        print(x.format(end = "")
-        letter_count = letter_count - 1
-    print("")
+        print(x)
+        letter_count += -1
 
