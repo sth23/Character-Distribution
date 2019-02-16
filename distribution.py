@@ -61,4 +61,5 @@ for x in all_letters:
 # Sorts letter_freq list appropriately
 # List is already in alphabetical order, only need to move longer strings forward
 letter_freq.sort(reverse = True, key = len)
+print('The distribution of characters in "' + user_input + '" is: ')
 [print(x) for x in letter_freq]
